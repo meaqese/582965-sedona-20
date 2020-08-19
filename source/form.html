@@ -25,7 +25,91 @@
     <div class="header__intro">
       <p class="header__intro-middle">Sedona</p>
     </div>
+
+    <section class="header__page-intro page-intro">
+      <h1 class="page-intro__title">Оставьте свой отзыв</h1>
+      <p class="page-intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
   </header>
+
+  <main class="main">
+    <form class="form" action="">
+      <div class="form__block">
+        <p class="form__caption">Представьтесь:</p>
+
+        <div class="form__field">
+          <label for="name" class="form__label">Имя*:</label>
+          <input type="text" class="form__input-text" id="name" placeholder="Петр" required>
+        </div>
+        <div class="form__field">
+          <label for="surname" class="form__label">Фамилия*:</label>
+          <input type="text" class="form__input-text" id="surname" placeholder="Иванов" required>
+        </div>
+        <div class="form__field">
+          <label for="patronymic" class="form__label">Отчество:</label>
+          <input type="text" class="form__input-text" id="patronymic" placeholder="Александрович">
+        </div>
+      </div>
+
+      <div class="form__block">
+        <p class="form__caption">Контактная информация:</p>
+
+        <div class="form__field">
+          <label for="phone-number" class="form__label">Контактный телефон*:</label>
+          <input type="tel" class="form__input-tel" id="phone-number" placeholder="Введите телефон">
+        </div>
+        <div class="form__field">
+          <label for="email" class="form__label">Электронная почта*:</label>
+          <input type="email" class="form__input-email" id="email" placeholder="Введите e-mail">
+        </div>
+      </div>
+
+      <div class="form__block">
+        <p class="form__caption">Ваше общее впечатление:</p>
+
+        <div class="form__field">
+          <input type="radio" class="form__input-radio" name="impression" id="positive">
+          <label for="positive" class="form__label">Скорее положительное</label>
+        </div>
+        <div class="form__field">
+          <input type="radio" class="form__input-radio" name="impression" id="negative">
+          <label for="negative" class="form__label">Скорее отрицательное</label>
+        </div>
+        <div class="form__field">
+          <input type="radio" class="form__input-radio" name="impression" id="difficult-question">
+          <label for="difficult-question" class="form__label">Затрудняюсь ответить</label>
+        </div>
+      </div>
+
+      <div class="form__block">
+        <p class="form__caption">Посещенные достопримечательности:</p>
+
+        <div class="form__field">
+          <input type="checkbox" class="form__input-checkbox" name="visited-places" id="place-1" checked>
+          <label for="place-1" class="form__label">Мост Дьявола</label>
+        </div>
+        <div class="form__field">
+          <input type="checkbox" class="form__input-checkbox" name="visited-places" id="place-2" checked>
+          <label for="place-2" class="form__label">Гора-Колокол</label>
+        </div>
+        <div class="form__field">
+          <input type="checkbox" class="form__input-checkbox" name="visited-places" id="place-3" checked>
+          <label for="place-3" class="form__label">Слайд-парк</label>
+        </div>
+        <div class="form__field">
+          <input type="checkbox" class="form__input-checkbox" name="visited-places" id="place-4">
+          <label for="place-4" class="form__label">Красные скалы</label>
+        </div>
+      </div>
+
+      <div class="form__block">
+        <p class="form__caption">Опишите свои эмоции:</p>
+        <textarea name="emotions" id="emotions" cols="30" rows="7" placeholder="Опишите подробно все свои восторги "></textarea>
+      </div>
+
+      <button type="submit" class="form__button-submit">Отправить отзыв</button>
+    </form>
+  </main>
 
   <footer class="footer">
     <section class="footer__social">
@@ -47,7 +131,7 @@
     </section>
 
     <p class="footer__developed-by">
-      Разработано <img src="" alt="HTMLAcademy">
+      Разработано <img src="https://via.placeholder.com/27x34" alt="HTMLAcademy">
     </p>
   </footer></body>
 </html>
