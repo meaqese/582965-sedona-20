@@ -1,0 +1,75 @@
+.form__caption {
+  text-transform: uppercase;
+
+  font-family: $pt-sans;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__label {
+  text-transform: uppercase;
+
+  font-family: $pt-sans;
+  font-size: 14px;
+  line-height: 26px;
+
+  &--answer {
+    text-transform: none;
+
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.form__input-text {
+  font-family: $pt-sans;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  background: $light-gray-2;
+
+  &::placeholder {
+    color: $black;
+  }
+}
+
+.form__input-tel {
+  font-family: $pt-sans;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  background: $light-gray-2;
+
+  &::placeholder {
+    color: $black;
+  }
+}
+
+.form__input-email {
+  font-family: $pt-sans;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  background: $light-gray-2;
+
+  &::placeholder {
+    color: $black;
+  }
+}
+
+.form__textarea {
+  font-family: $pt-sans;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  background: $light-gray-2;
+
+  &::placeholder {
+    color: $black;
+  }
+}
