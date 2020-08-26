@@ -1,6 +1,7 @@
 /* AutoImporter 0.1 -- */
 // sass imports
-@import "variables.scss";
+@import "utils/variables";
+@import "utils/fonts";
 
 // sass/blocks imports
 @import "blocks/advantages.scss";
@@ -23,23 +24,6 @@
 
   margin: -1px;
 }*/
-
-// Fonts
-@font-face {
-  font-family: "PT Sans", sans-serif;
-  src:
-    url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "PT Sans", sans-serif;
-  font-weight: bold;
-
-  src:
-    url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
-}
 
 .page {
   height: 100%;
