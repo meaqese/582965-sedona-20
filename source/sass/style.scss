@@ -1,1 +1,57 @@
-// Начните писать стили здесь
+/* AutoImporter 0.1 -- */
+// sass imports 
+@import "mixins.scss";
+@import "variables.scss";
+
+// sass/blocks imports 
+@import "blocks/advantages.scss";
+@import "blocks/footer.scss";
+@import "blocks/header.scss";
+@import "blocks/last-question-block.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-intro.scss";
+@import "blocks/photo-boxes.scss";
+@import "blocks/recommendations.scss";
+@import "blocks/site-list.scss";
+/* -- AutoImporter */
+
+// Global styles
+/*.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  clip: rect(0 0 0 0);
+
+  margin: -1px;
+}*/
+
+// Fonts
+@font-face {
+  font-family: 'PT Sans', sans-serif;
+  src:
+    url("../fonts/ptsans.woff2") format('woff2'),
+    url("../fonts/ptsans.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+
+  src:
+    url("../fonts/ptsansbold.woff2") format('woff2'),
+    url("../fonts/ptsansbold.woff") format('woff');
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  min-width: 100%;
+
+  margin: 0;
+}

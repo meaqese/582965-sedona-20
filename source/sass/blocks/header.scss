@@ -1,0 +1,29 @@
+.header__intro {
+  background-color: #293B45;
+  background-image: url("#{$images}/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0;
+
+  width: 320px;
+  height: 389px;
+}
+
+.header__page-intro {
+  background-color: $white;
+}
+
+.header__page-intro-title {
+  text-transform: uppercase;
+  font-family: $pt-sans;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.header__page-intro-description {
+  text-transform: uppercase;
+  font-family: $pt-sans;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+}

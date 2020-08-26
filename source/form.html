@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Форма отзыва</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="header">
@@ -11,24 +13,32 @@
     </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__open-button" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item__active"><a href="index.html">Главная</a></li>
-        <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
-        <li class="site-list__item"><a>Форма отзыва</a></li>
-        <li class="site-list__item"><a href="">HTML Academy</a></li>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__button" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__button" href="photo.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__button">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__button" href="">HTML Academy</a>
+        </li>
       </ul>
     </nav>
 
     <div class="header__intro">
-      <p class="header__intro-middle">Sedona</p>
+      <p class="visually-hidden">Sedona</p>
     </div>
 
-    <section class="header__page-intro page-intro">
-      <h1 class="page-intro__title">Оставьте свой отзыв</h1>
-      <p class="page-intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <section class="header__page-intro">
+      <h1 class="header__page-intro-title">Оставьте свой отзыв</h1>
+      <p class="header__page-intro-description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
   </header>
 
@@ -133,5 +143,6 @@
     <p class="footer__developed-by">
       Разработано <img src="https://via.placeholder.com/27x34" alt="HTMLAcademy">
     </p>
-  </footer></body>
+  </footer>
+</body>
 </html>

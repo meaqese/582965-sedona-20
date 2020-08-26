@@ -1,0 +1,33 @@
+.last-question-block {
+  background-color: white;
+}
+
+.last-question-block__title {
+  text-transform: uppercase;
+  font-family: $pt-sans;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.last-question-block__description {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: $pt-sans;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.last-question-block__button {
+  text-transform: uppercase;
+
+  font-family: $pt-sans;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+
+  color: white;
+
+  background-color: $light-blue;
+  border: 0;
+}
