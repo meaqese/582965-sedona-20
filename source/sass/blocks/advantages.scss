@@ -1,0 +1,37 @@
+.advantages__info {
+  background-color: $light-blue;
+
+  &--gray {
+    background-color: $light-gray;
+  }
+}
+
+.advantages__title {
+  text-transform: uppercase;
+
+  font-family: $pt-sans;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: white;
+
+  &--black {
+    color: black;
+  }
+}
+
+.advantages__description {
+  text-transform: uppercase;
+
+  font-family: $pt-sans;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: white;
+
+  &--black {
+    color: black;
+  }
+}

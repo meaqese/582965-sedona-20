@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Фото</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="header">
     <a href="index.html" class="header__logo">
-      <img src="" alt="Логотип Sedona" width="102" height="84">
+      <img src="/" alt="Логотип Sedona" width="102" height="84">
     </a>
 
     <nav class="main-nav">
       <button class="main-nav__open-button" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item__active"><a href="index.html">Главная</a></li>
-        <li class="site-list__item"><a>Фото и видео</a></li>
-        <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-        <li class="site-list__item"><a href="">HTML Academy</a></li>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__button" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__button" href="photo.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__button">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__button" href="">HTML Academy</a>
+        </li>
       </ul>
     </nav>
 
@@ -26,9 +36,9 @@
       <p class="header__intro-middle">Sedona</p>
     </div>
 
-    <section class="header__page-intro page-intro">
-      <h1 class="page-intro__title">Фото и видео</h1>
-      <p class="page-intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+    <section class="header__page-intro">
+      <h1 class="header__page-intro-title">Фото и видео</h1>
+      <p class="header__page-intro-description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
     </section>
   </header>
 
@@ -70,6 +80,7 @@
       <video class="last-question-block__media" poster="https://via.placeholder.com/320x201" controls></video>
     </section>
   </main>
+
   <footer class="footer">
     <section class="footer__social">
       <h2 class="visually-hidden">Мы в соцсетях</h2>

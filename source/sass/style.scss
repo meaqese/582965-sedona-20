@@ -1,1 +1,38 @@
-// Начните писать стили здесь
+/* AutoImporter 0.1 -- */
+// sass imports
+@import "utils/variables";
+@import "utils/fonts";
+
+// sass/blocks imports
+@import "blocks/advantages.scss";
+@import "blocks/footer.scss";
+@import "blocks/header.scss";
+@import "blocks/last-question-block.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/photo-boxes.scss";
+@import "blocks/recommendations.scss";
+/* -- AutoImporter */
+
+// Global styles
+/*.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  clip: rect(0 0 0 0);
+
+  margin: -1px;
+}*/
+
+.page {
+  height: 100%;
+  width: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  min-width: 100%;
+
+  margin: 0;
+}

@@ -3,45 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
       <a href="index.html" class="header__logo">
-        <img src="" alt="Логотип Sedona" width="102" height="84">
+        <img src="/" alt="Логотип Sedona" width="102" height="84">
       </a>
 
       <nav class="main-nav">
         <button class="main-nav__open-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item__active"><a>Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
-          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-          <li class="site-list__item"><a href="">HTML Academy</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__button">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__button" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__button" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__button" href="">HTML Academy</a>
+          </li>
         </ul>
       </nav>
 
       <div class="header__intro">
-        <div class="header__intro-top">
-          <span class="visually-hidden">Welcome to the gorgeous</span>
-        </div>
-
-        <p class="header__intro-middle">Sedona</p>
-
-        <div class="header__intro-bottom">
-          <span class="visually-hidden">Because the grand canyon sucks!</span>
-        </div>
+        <p class="visually-hidden">Welcome to the gorgeous</p>
+        <p class="visually-hidden">Sedona</p>
+        <p class="visually-hidden">Because the grand canyon sucks!</p>
       </div>
 
-      <section class="header__page-intro page-intro">
-        <h1 class="page-intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="page-intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <section class="header__page-intro">
+        <h1 class="header__page-intro-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="header__page-intro-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
     </header>
 
     <main class="main">
       <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
         <ol class="advantages__list">
           <li class="advantages__item">
             <section class="advantages__info">
@@ -49,18 +54,18 @@
               <p class="advantages__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
             </section>
             <img class="advantages__photo" src="https://via.placeholder.com/320x260" alt="Фото отеля">
-            <ul class="advantages__recommendations site-list">
-              <li class="site-list">
-                <h3 class="site-list__title">Жилье</h3>
-                <p class="site-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <ul class="advantages__recommendations recommendations-list">
+              <li class="recommendations-list__item">
+                <h3 class="recommendations-list__title">Жилье</h3>
+                <p class="recommendations-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="site-list">
-                <h3 class="site-list__title">Cувениры</h3>
-                <p class="site-list__description">Не только китайского, но и местного производства!</p>
+              <li class="recommendations-list">
+                <h3 class="recommendations-list__title">Cувениры</h3>
+                <p class="recommendations-list__description">Не только китайского, но и местного производства!</p>
               </li>
-              <li class="site-list">
-                <h3 class="site-list__title">Еда</h3>
-                <p class="site-list__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <li class="recommendations-list">
+                <h3 class="recommendations-list__title">Еда</h3>
+                <p class="recommendations-list__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
@@ -75,22 +80,22 @@
 
           <li class="advantages__item">
             <section class="advantages__info advantages__info--gray">
-              <h2 class="advantages__title">Небольшая площадь</h2>
-              <p class="advantages__description">Все интересные места находятся очень близко</p>
+              <h2 class="advantages__title advantages__title--black">Небольшая площадь</h2>
+              <p class="advantages__description advantages__description--black">Все интересные места находятся очень близко</p>
             </section>
           </li>
 
           <li class="advantages__item">
             <section class="advantages__info advantages__info--gray">
-              <h2 class="advantages__title">Красивая дорога</h2>
-              <p class="advantages__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
+              <h2 class="advantages__title advantages__title--black">Красивая дорога</h2>
+              <p class="advantages__description advantages__description--black">Ехать в седону из лас-вегаса совсем не скучно!</p>
             </section>
           </li>
 
           <li class="advantages__item">
             <section class="advantages__info advantages__info--gray">
-              <h2 class="advantages__title">Мало туристов</h2>
-              <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
+              <h2 class="advantages__title advantages__title--black">Мало туристов</h2>
+              <p class="advantages__description advantages__description--black">Большинство едет в гранд каньон и толпится там</p>
             </section>
           </li>
         </ol>
@@ -100,9 +105,11 @@
         <h2 class="last-question-block__title">Заинтересовались?</h2>
 
         <p class="last-question-block__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="last-question-block__button">Найти Гостиницу</button>
         <img class="last-question-block__media" src="https://via.placeholder.com/320x350" alt="Карта местонахождения Седоны">
       </section>
     </main>
+
     <footer class="footer">
       <section class="footer__social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
