@@ -1,18 +1,15 @@
 /* AutoImporter 0.1 -- */
-// sass imports 
-@import "mixins.scss";
+// sass imports
 @import "variables.scss";
 
-// sass/blocks imports 
+// sass/blocks imports
 @import "blocks/advantages.scss";
 @import "blocks/footer.scss";
 @import "blocks/header.scss";
 @import "blocks/last-question-block.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/page-intro.scss";
 @import "blocks/photo-boxes.scss";
 @import "blocks/recommendations.scss";
-@import "blocks/site-list.scss";
 /* -- AutoImporter */
 
 // Global styles
@@ -29,19 +26,19 @@
 
 // Fonts
 @font-face {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   src:
-    url("../fonts/ptsans.woff2") format('woff2'),
-    url("../fonts/ptsans.woff") format('woff');
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: bold;
 
   src:
-    url("../fonts/ptsansbold.woff2") format('woff2'),
-    url("../fonts/ptsansbold.woff") format('woff');
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
 }
 
 .page {
