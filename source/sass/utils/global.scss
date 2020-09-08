@@ -1,0 +1,26 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  clip: rect(0 0 0 0);
+
+  margin: -1px;
+}
+
+img {
+  /* Temporary disabled
+  max-width: 100%;
+  height: auto;
+  */
+
+  // Temporary
+  width: 100%;
+  height: min-content;
+  border: 1px solid #eeeeee;
+}

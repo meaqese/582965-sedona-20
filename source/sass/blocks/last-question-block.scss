@@ -1,6 +1,12 @@
 .last-question-block {
   background-color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
 }
+
 
 .last-question-block__title {
   text-transform: uppercase;
@@ -8,6 +14,8 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+
+  text-align: center;
 }
 
 .last-question-block__description {
@@ -16,8 +24,11 @@
   font-family: $pt-sans;
   font-size: 14px;
   line-height: 24px;
+
+  text-align: center;
 }
 
+<<<<<<< HEAD
 .last-question-block__button {
   text-transform: uppercase;
 
@@ -31,3 +42,5 @@
   background-color: $light-blue;
   border: 0;
 }
+=======
+>>>>>>> ec8fc75... m4-t2
