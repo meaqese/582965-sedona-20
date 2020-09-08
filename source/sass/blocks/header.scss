@@ -21,7 +21,7 @@
 
 .header__intro {
   background-color: #293b45;
-  background-image: url("#{$images}/bg-back-mobile@1x.jpg");
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0;
 
@@ -43,7 +43,7 @@
   &::after {
     position: absolute;
 
-    content: '';
+    content: "";
     background-image: url("../../img/text-sedona.svg");
 
     width: 229px;
@@ -63,7 +63,7 @@
   &--index::after {
     position: absolute;
 
-    content: '';
+    content: "";
     background-image: url("../../img/text-sedona-index.svg");
 
     width: 282px;
