@@ -29,8 +29,10 @@
 
 
 .photo-boxes__basic-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  @media (min-width: $table-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .photo-boxes__name {

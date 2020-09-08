@@ -44,7 +44,7 @@
 
   <main class="main">
     <form class="form" action="/">
-      <div class="form__block">
+      <div class="form__block form__block--initials">
         <p class="form__caption">Представьтесь:</p>
 
         <div class="form__field">
@@ -61,20 +61,22 @@
         </div>
       </div>
 
-      <div class="form__block">
+      <div class="form__block form__block--contacts">
         <p class="form__caption">Контактная информация:</p>
 
-        <div class="form__field">
-          <label for="phone-number" class="form__label">Контактный телефон*:</label>
-          <input type="tel" class="form__input-tel" id="phone-number" placeholder="Введите телефон">
-        </div>
-        <div class="form__field">
-          <label for="email" class="form__label">Электронная почта*:</label>
-          <input type="email" class="form__input-email" id="email" placeholder="Введите e-mail">
+        <div class="form__container form__container--contacts">
+          <div class="form__field">
+            <label for="phone-number" class="form__label">Контактный телефон*:</label>
+            <input type="tel" class="form__input-tel" id="phone-number" placeholder="Введите телефон">
+          </div>
+          <div class="form__field">
+            <label for="email" class="form__label">Электронная почта*:</label>
+            <input type="email" class="form__input-email" id="email" placeholder="Введите e-mail">
+          </div>
         </div>
       </div>
 
-      <div class="form__block">
+      <div class="form__block form__block--impressions">
         <p class="form__caption">Ваше общее впечатление:</p>
 
         <div class="form__field">
@@ -91,33 +93,36 @@
         </div>
       </div>
 
-      <div class="form__block">
+      <div class="form__block form__block--places">
         <p class="form__caption">Посещенные достопримечательности:</p>
 
-        <div class="form__field">
-          <input type="checkbox" class="form__input-checkbox" name="visited-places" id="place-1" checked>
-          <label for="place-1" class="form__label form__label--answer">Мост Дьявола</label>
-        </div>
-        <div class="form__field">
-          <input type="checkbox" class="form__input-checkbox" name="visited-places" id="place-2" checked>
-          <label for="place-2" class="form__label form__label--answer">Гора-Колокол</label>
-        </div>
-        <div class="form__field">
-          <input type="checkbox" class="form__input-checkbox" name="visited-places" id="place-3" checked>
-          <label for="place-3" class="form__label form__label--answer">Слайд-парк</label>
-        </div>
-        <div class="form__field">
-          <input type="checkbox" class="form__input-checkbox" name="visited-places" id="place-4">
-          <label for="place-4" class="form__label form__label--answer">Красные скалы</label>
+        <div class="form__container form__container--places">
+          <div class="form__field">
+            <input type="checkbox" class="form__input-checkbox" name="visited-places" id="place-1" checked>
+            <label for="place-1" class="form__label form__label--answer">Мост Дьявола</label>
+          </div>
+          <div class="form__field">
+            <input type="checkbox" class="form__input-checkbox" name="visited-places" id="place-2" checked>
+            <label for="place-2" class="form__label form__label--answer">Гора-Колокол</label>
+          </div>
+          <div class="form__field">
+            <input type="checkbox" class="form__input-checkbox" name="visited-places" id="place-3" checked>
+            <label for="place-3" class="form__label form__label--answer">Слайд-парк</label>
+          </div>
+          <div class="form__field">
+            <input type="checkbox" class="form__input-checkbox" name="visited-places" id="place-4">
+            <label for="place-4" class="form__label form__label--answer">Красные скалы</label>
+          </div>
         </div>
       </div>
 
-      <div class="form__block">
+      <div class="form__block form__block--emotions">
         <p class="form__caption">Опишите свои эмоции:</p>
         <textarea class="form__textarea" name="emotions" id="emotions" cols="30" rows="7" placeholder="Опишите подробно все свои восторги "></textarea>
       </div>
 
       <button type="submit" class="form__button-submit button">Отправить отзыв</button>
+      <p class="form__not-mobile">* — обязательные поля</p>
     </form>
   </main>
 

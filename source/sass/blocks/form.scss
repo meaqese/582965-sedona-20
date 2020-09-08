@@ -1,5 +1,63 @@
+.form {
+  @media (min-width: $table-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 0 60px;
+  }
+}
+
+.form__block {
+  &--impressions {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  &--initials {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  &--contacts {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+
+  &--places {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+
+  &--emotions {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+  }
+}
+
+.form__container {
+  &--contacts {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &--places {
+    @media (min-width: $table-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
 .form__caption {
   text-transform: uppercase;
+  text-align: center;
 
   font-family: $pt-sans;
   font-weight: bold;
@@ -43,6 +101,12 @@
 
   background: $light-gray-2;
 
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
+  }
+
   &::placeholder {
     color: $black;
   }
@@ -56,6 +120,12 @@
 
   background: $light-gray-2;
 
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
+  }
+
   &::placeholder {
     color: $black;
   }
@@ -67,9 +137,28 @@
   font-size: 18px;
   line-height: 26px;
 
+  width: 100%;
+
   background: $light-gray-2;
 
   &::placeholder {
     color: $black;
+  }
+}
+
+
+.form__not-mobile {
+  display: none;
+
+  text-transform: uppercase;
+
+  font-family: $pt-sans;
+  font-size: 14px;
+  line-height: 26px;
+
+  text-align: right;
+
+  @media (min-width: $table-width) {
+    display: inline;
   }
 }
