@@ -5,11 +5,13 @@
     <title>HTML Academy: Седона</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="header">
       <a href="index.html" class="header__logo">
-        <img src="https://via.placeholder.com/102x84" alt="Логотип Sedona" width="102" height="84">
+        <img class="visually-hidden" src="https://via.placeholder.com/102x84" alt="Логотип Sedona" width="102" height="84">
       </a>
 
       <nav class="main-nav">
@@ -32,7 +34,7 @@
         </ul>
       </nav>
 
-      <div class="header__intro">
+      <div class="header__intro header__intro--index">
         <p class="visually-hidden">Welcome to the gorgeous</p>
         <p class="visually-hidden">Sedona</p>
         <p class="visually-hidden">Because the grand canyon sucks!</p>
@@ -49,21 +51,25 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ol class="advantages__list">
           <li class="advantages__item">
-            <section class="advantages__info">
-              <h2 class="advantages__title">Настоящий городок</h2>
-              <p class="advantages__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
-            </section>
-            <img class="advantages__photo" src="https://via.placeholder.com/320x260" alt="Фото отеля">
+            <div class="advantages__container">
+              <section class="advantages__info">
+                <h2 class="advantages__title">Настоящий городок</h2>
+                <p class="advantages__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
+              </section>
+
+              <img class="advantages__photo" src="https://via.placeholder.com/320x260" alt="Фото отеля">
+            </div>
+
             <ul class="advantages__recommendations recommendations-list">
               <li class="recommendations-list__item">
                 <h3 class="recommendations-list__title">Жилье</h3>
                 <p class="recommendations-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="recommendations-list">
+              <li class="recommendations-list__item">
                 <h3 class="recommendations-list__title">Cувениры</h3>
                 <p class="recommendations-list__description">Не только китайского, но и местного производства!</p>
               </li>
-              <li class="recommendations-list">
+              <li class="recommendations-list__item">
                 <h3 class="recommendations-list__title">Еда</h3>
                 <p class="recommendations-list__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
@@ -71,13 +77,16 @@
           </li>
 
           <li class="advantages__item">
-            <section class="advantages__info">
-              <h2 class="advantages__title">Там есть мост дьявола</h2>
-              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </section>
-            <img class="advantages__photo" src="https://via.placeholder.com/320x260" alt="Фото моста">
+            <div class="advantages__container advantages__container--to-left">
+              <section class="advantages__info">
+                <h2 class="advantages__title">Там есть мост дьявола</h2>
+                <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </section>
+              <img class="advantages__photo" src="https://via.placeholder.com/320x260" alt="Фото моста">
+            </div>
           </li>
-
+        </ol>
+        <ol class="advantages__list advantages__list--short">
           <li class="advantages__item">
             <section class="advantages__info advantages__info--gray">
               <h2 class="advantages__title advantages__title--black">Небольшая площадь</h2>
@@ -102,23 +111,25 @@
       </section>
 
       <section class="last-question-block">
-        <h2 class="last-question-block__title">Заинтересовались?</h2>
-
-        <p class="last-question-block__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <div class="last-question-block__text">
+          <h2 class="last-question-block__title">Заинтересовались?</h2>
+          <p class="last-question-block__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </div>
+        
         <button class="last-question-block__button button">Найти Гостиницу</button>
         <img class="last-question-block__media" src="https://via.placeholder.com/320x350" alt="Карта местонахождения Седоны">
       </section>
     </main>
 
     <footer class="footer">
+      <p class="footer__hashtag">#VISITSEDONA</p>
+
       <section class="footer__social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
 
-        <p class="footer__hashtag">#VISITSEDONA</p>
-
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="visually-hidden" href="">Twitter</a>
+            <a href="">Twitter</a>
           </li>
           <li class="footer__item">
             <a href="">Facebook</a>
