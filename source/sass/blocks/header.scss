@@ -3,27 +3,14 @@
   flex-direction: column;
 }
 
-.header__logo {
-  height: 84px;
-  background-image: url("../img/logo-sedona-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: 0;
-
-  @media (min-width: $table-width) {
-    background-image: url("../img/logo-sedona-tablet.svg");
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/logo-sedona-desktop.svg");
-    height: 97px;
-  }
-}
-
 .header__intro {
   background-color: #293b45;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0;
+  background-size: cover;
+
+  position: relative;
 
   width: 100%;
   height: 389px;
@@ -63,11 +50,18 @@
   &--index::after {
     position: absolute;
 
+    top: 90px;
+    left: 0;
+    right: 0;
+
+    margin: 0 auto;
+
     content: "";
     background-image: url("../img/text-sedona-index.svg");
+    background-size: cover;
 
     width: 282px;
-    height: 284px;
+    height: 214px;
 
     @media (min-width: $table-width) {
       width: 460px;
@@ -78,6 +72,23 @@
 
 .header__page-intro {
   background-color: $white;
+  position: relative;
+
+  /*&::before {
+    position: absolute;
+    top: -57px;
+    left: -50px;
+
+    width: 100%;
+    height: 57px;
+
+    content: "";
+
+    background: url("../../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+  }*/
 }
 
 .header__page-intro-title {
